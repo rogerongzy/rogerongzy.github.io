@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Zhiyi Rong's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="Zhiyi Rong">
+  <meta name="author" content="Zhiyi Rong" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <!--
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        // Store hash
+        var hash = this.hash;
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  //-->
+
+</head>
+
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h3><b>Zhiyi Rong</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#award" class="w3-bar-item w3-button">Awards</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">Zhiyi Rong</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+<!-- Push down content on small screens -->
+<div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+<div class="w3-container w3-center w3-padding-32" id="home">
+  <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/roger.jpg">
+  <h1>Zhiyi Rong</h1>
+  <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+    I am a student studying MSc at School of Electrical & Electronic Engineering, <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, working on robotics, control theory, computer vision and machine learning, etc. Before that, I finished my BEng at school of Automation, <a href="https://www.seu.edu.cn/">Southeast University</a>, where I was advised by Prof. <a href="https://automation.seu.edu.cn/zb_32794/list.htm">Bo Zhou</a>.
+  </p>
+  <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+    Email: <a href="mailto:rong0014@e.ntu.edu.sg">rong0014@e.ntu.edu.sg</a>, <a href="mailto:rogerongzy@foxmail.com">rogerongzy@foxmail.com</a>
+  </p>
+  </tbody></table>
+</div>
+
+<!-- The Projects Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="projects">
+    <h2>Projects</h2>
+
+    <h4><li>Humanoid Soccer Robot</li></h4>
+    <img style="width:34%;" src="images/robot.jpg"> &nbsp&nbsp <img style="width:20%;" src="images/walking_demo.gif"> &nbsp&nbsp <img style="width:34%;" src="images/kick_demo.gif">
+    <p class="w3-justify">
+      This project aims to develop a series of soccer robots that own similar body structure to humans and are able to walk steadily, recognize and kick the ball, follow the rules of the game, etc. <strong>Motion control</strong> is the major part of my involvement, where the <span style="color:red">ZMP (Zero Moment Point)</span> is controlled to maintain balance while walking, and specific actions are carried out through <span style="color:red">key-frame interpolation</span>.
+    </p>
+
+    <h4><li>Defect Detection</li></h4>
+    <img style="width:80%;" src="images/defect.png">
+    <p class="w3-justify">
+      In this project, a small number of positive samples are used to train an AI model of defect detection, applying to both simple or complex background. <strong>Unsupervised learning</strong> methods such as <span style="color:red">AE (AutoEncoder)</span> and <span style="color:red">MemAE</span> are taken to train a network on reconstruction, together with some algorithms on <span style="color:red">morphology</span> and <span style="color:red">feature matching</span> which help improve the result.
+    </p>
+
+
+    <h4><li>Others</li></h4>
+    <p class="w3-justify">
+      Pending.
+    </p>
+
+  </div>
+
+
+
+
+  <!-- The Awards Section -->
+  <div class="w3-container w3-padding-32" id="award">
+    <h2>Awards</h2>
+      <h4><li>Competition Awards</li></h4>
+        <p><li> 2021, First Prize in <a href="http://crc.drct-caa.org.cn/">RoboCup China Open</a>, <a href="http://www.caa.org.cn/">CAA</a></p>
+        <p><li> 2020, Second Prize in the 13th <a href="http://jsjds.blcu.edu.cn/">China Collegiate Computing Contest</a>, China</p>
+        <p><li> 2020, First Prize in the 19th <a href="https://www.robomaster.com/">RoboMaster</a> online, <a href="https://www.dji.com/">DJI-Innovations</a></p>
+        <p><li> 2020, Honorable Mention in Mathematical Contest in Modeling, <a href="https://www.comap.com/">COMAP</a></p>
+        <p><li> 2020, Rank 28 in <a href="https://www.marsbigdata.com/competition/details?id=5293671830016">The Frist ZhengTu Cup on Campus Machine Vision AI Competition</a>, <a href="http://www.jsai.org.cn/">JSAI</a></p>
+      <h4><li>Student Awards</li></h4>
+        <p><li> 2021, Zoina Scholarship, Southeast University</p>
+        <p><li> 2020, Merit Student, Southeast University</p>
+  </div>  
+
+</div>
+
+
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
