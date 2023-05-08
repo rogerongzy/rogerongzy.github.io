@@ -80,7 +80,7 @@
 
 <!-- The Home Section -->
 <div class="w3-container w3-center w3-padding-32" id="home">
-  <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/roger.jpg">
+  <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/roger.png">
   <h1>Zhiyi Rong</h1>
   <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
     I am a student studying MSc at School of Electrical & Electronic Engineering, <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, working on robotics, control theory, computer vision and machine learning, etc. Before that, I finished my BEng at school of Automation, <a href="https://www.seu.edu.cn/">Southeast University</a>, where I was advised by Prof. <a href="https://automation.seu.edu.cn/zb_32794/list.htm">Bo Zhou</a>.
@@ -95,8 +95,17 @@
   <div class="w3-container w3-light-grey w3-padding-32" id="projects">
     <h2>Projects</h2>
 
+    <h4><li>RFID and Vision-Based Navigation and Tracking (Recent)</li></h4>
+    <img style="width:30%;" src="images/rfid_robot.jpg"> &nbsp&nbsp <img style="width:56%;" src="images/AoA.png">
+    <p class="w3-justify">
+      Due to the poor performance of optical cameras in occlusion, low-light and low-resolution situations, RFID (Radio Frequency Identification) is introduced for mutual complementary advantages. Phased-array antennas are employed to measure the <span style="color:red">AoA (Angle-of-Attack)</span> of the tag, which is matched with the visual recognition results and acted as the input of RNN in order to predict the target movement.
+    </p>
+    <p class="w3-justify">
+      Currently we are researching on the selectivity of RFID to vision, with the later plan of extending to multi-target tracking.
+    </p>
+
     <h4><li>Humanoid Soccer Robot</li></h4>
-    <img style="width:34%;" src="images/robot.jpg"> &nbsp&nbsp <img style="width:20%;" src="images/walking_demo.gif"> &nbsp&nbsp <img style="width:34%;" src="images/kick_demo.gif">
+    <img style="width:34%;" src="images/robot.jpg"> &nbsp&nbsp <img style="width:34%;" src="images/kick_demo.gif">
     <p class="w3-justify">
       This project aims to develop a series of soccer robots that own similar body structure to humans and are able to walk steadily, recognize and kick the ball, follow the rules of the game, etc. <strong>Motion control</strong> is the major part of my involvement, where the <span style="color:red">ZMP (Zero Moment Point)</span> is controlled to maintain balance while walking, and specific actions are carried out through <span style="color:red">key-frame interpolation</span>.
     </p>
@@ -104,7 +113,7 @@
     <h4><li>Visual Tracking</li></h4>
     <img style="width:40%;" src="images/roma1.jpg"> &nbsp&nbsp <img style="width:51%;" src="images/roma2.gif">
     <p class="w3-justify">
-      This visual tracking system serves RoboMaster competition. The main task of my team is to identify the number on the armors and track the targets no matter where they move. <span style="color:red">SVM</span> works quite well on number classification, and <span style="color:red">Kalman Filter</span> is used to smooth the control signal of the rotation angle. 
+      This visual tracking system serves RoboMaster competition. The main task of my team is to identify the number on the armors and track the targets no matter where they move. <span style="color:red">SVM (Support Vector Machine)</span> works quite well on number classification, and <span style="color:red">Kalman Filter</span> is used to smooth the control signal of the rotation angle. 
     </p>
 
     <h4><li>Robot Receptionist</li></h4>
@@ -115,7 +124,7 @@
 
     <h4><li>Defect Detection</li></h4>
     <img style="width:80%;" src="images/defect.png">
-    <p class="w3-justify"></p>
+    <p class="w3-justify">
       Here are four groups of pictures, among each of which is raw image, reconstructed image and result image from left to right. 
     </p>
     <p class="w3-justify">
@@ -125,7 +134,7 @@
     <h4><li>Others</li></h4>
     <img style="width:40%;" src="images/smartcar.jpg"> &nbsp&nbsp <img style="width:41%;" src="images/industrial_arm.jpg">
     <p class="w3-justify">
-    PID controlled smart car and vision-based grasping task through a robotic arm.
+    PID controlled smart car, and vision-based chess-grasping task through robotic arm and air bump.
     </p>
 
   </div>
