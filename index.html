@@ -83,7 +83,7 @@
   <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/roger.png">
   <h1>Zhiyi Rong</h1>
   <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-    I am now a student studying MSc at School of Electrical & Electronic Engineering, <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, working on robotics, control and computer vision, supervised by Prof. <a href="https://dr.ntu.edu.sg/cris/rp/rp00141">Lin Zhiping</a>. Before that, I finished my BEng at school of Automation, <a href="https://www.seu.edu.cn/">Southeast University</a>, where I was advised by Prof. <a href="https://automation.seu.edu.cn/zb_32794/list.htm">Bo Zhou</a>.
+    I am now a student studying MSc at School of Electrical & Electronic Engineering, <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, working on robotics, control and computer vision, supervised by Prof. <a href="https://dr.ntu.edu.sg/cris/rp/rp00141">Zhiping Lin</a>. Before that, I finished my BEng at school of Automation, <a href="https://www.seu.edu.cn/">Southeast University</a>, where I was advised by Prof. <a href="https://automation.seu.edu.cn/zb_32794/list.htm">Bo Zhou</a>.
   </p>
   <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
     Email: <a href="mailto:rogerongzy@foxmail.com">rogerongzy@foxmail.com</a>, <a href="mailto:rong0014@e.ntu.edu.sg">rong0014@e.ntu.edu.sg</a>, <a href="mailto:rogerongzy@gmail.com">rogerongzy@gmail.com</a>
@@ -109,24 +109,25 @@
     <p class="w3-justify">
       This project aims to develop a series of soccer robots which have similar body structure as humans' and are able to walk steadily, recognize and kick the ball, abide by the rules of the game, etc. <strong>Motion control</strong> is the major part of my involvement, where the <span style="color:red">Zero Moment Point (ZMP)</span> is controlled to maintain balance during walking, and specific actions are carried out through <span style="color:red">key-frame interpolation</span>.
     </p>
+    <img style="width:19%;" src="images/front.gif"> &nbsp&nbsp <img style="width:32%;" src="images/beside.gif"> &nbsp&nbsp <img style="width:40%;" src="images/ZMP.png">
+    <p class="w3-justify">
+      <span style="color:red">Model Predictive Control (MPC)</span> is also used to control the ZMP in order to achieve steady walking, simulated in PyBullet.
+    </p>
 
     <h4><li>Visual Tracking</li></h4>
     <img style="width:40%;" src="images/roma1.jpg"> &nbsp&nbsp <img style="width:51%;" src="images/roma2.gif">
     <p class="w3-justify">
-      This visual tracking system serves RoboMaster competition. The main task of my team is to identify the number on the armors and track the targets no matter where they move. <span style="color:red">Support Vector Machine (SVM)</span> works quite well on number classification, and <span style="color:red">Kalman Filter</span> is used to smooth the control signal of the rotation angle. 
+      This visual tracking scheme serves the RoboMaster competition. The main task of my team is to identify the number on the armors and track the targets no matter where they move. <span style="color:red">Support Vector Machine (SVM)</span> works quite well on number classification, and <span style="color:red">Kalman Filter</span> is used to smooth the control signal of the rotation angle. 
     </p>
 
     <h4><li>Robot Receptionist</li></h4>
     <img style="width:50%;" src="images/receptionist.jpg">
     <p class="w3-justify">
-      This robot is designed to welcome and guide guests, with the ability of navigation, avoidance, face recognition, voice interaction, etc. PC acts as the main controller which a mobile platform, a Kinect V1 camera and a 2D lidar are connected to. Several open source packages and APIs (RGB-D SLAM, Face++, iFLYTEK, etc.) contribute to the realization of human-robot interaction.
+      This robot is designed to welcome and guide guests, integrate the function of navigation, avoidance, face recognition, voice interaction, etc. PC acts as the main controller which a mobile platform, a Kinect V1 camera and a 2D lidar are connected to. Several open source packages and APIs (RGB-D SLAM, Face++, iFLYTEK, etc.) contribute to the realization of human-robot interaction. All of the sensors and actuators communicate via <span style="color:red">ROS nodes</span>.
     </p>
 
     <h4><li>Defect Detection</li></h4>
-    <img style="width:80%;" src="images/defect.png">
-    <p class="w3-justify">
-      Here are four groups of pictures, among each of which is raw image, reconstructed image and result image from left to right. 
-    </p>
+    <img style="width:75%;" src="images/image.jpg">
     <p class="w3-justify">
       In this project, a small number of positive samples are used to train an AI model of defect detection, applying to both simple or complex background. <strong>Unsupervised learning</strong> methods such as <span style="color:red">AutoEncoder (AE)</span> and <span style="color:red">MemAE</span> are taken to train a network on reconstruction, together with some algorithms on <span style="color:red">morphology</span> and <span style="color:red">feature matching</span> which help improve the result.
     </p>
@@ -139,9 +140,15 @@
 
   </div>
 
+  <!-- The Services Section -->
+  <div class="w3-container w3-padding-32" id="service">
+    <h2>Services</h2>
+      <p><li> 2022, Research assistant in <a href="https://www.ntu.edu.sg/ciss/research-capabilities/research-programmes/share/">Schaeffler Hub for Advanced REsearch (SHARE)</a>, <a href="https://www.ntu.edu.sg/">NTU</a></p>
+  </div>
+
 
   <!-- The Awards Section -->
-  <div class="w3-container w3-padding-32" id="award">
+  <div class="w3-container w3-light-grey w3-padding-32" id="award">
     <h2>Awards</h2>
       <h4><li>Competition Awards</li></h4>
         <p><li> 2021, First Prize in <a href="http://crc.drct-caa.org.cn/">RoboCup China Open</a>, <a href="http://www.caa.org.cn/">CAA</a></p>
@@ -154,7 +161,9 @@
         <p><li> 2020, Merit Student, Southeast University</p>
   </div>  
 
+
 </div>
+
 
 
 <script>
